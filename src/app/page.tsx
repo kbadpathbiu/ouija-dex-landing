@@ -34,10 +34,18 @@ export default function Home() {
 
         <div className={styles.socialsAndGoal}>
           <div className={styles.socials}>
-            <AiOutlineTwitter className={styles.socialIcon} />
-            <BiLogoDiscordAlt className={styles.socialIcon} />
-            <SiMedium className={styles.socialIcon} />
-            <AiFillGithub className={styles.socialIcon} />
+            <Link href={"https://twitter.com/ouija_exchange"}>
+              <AiOutlineTwitter className={styles.socialIcon} />
+            </Link>
+            <Link href={"https://discord.gg/jRtGF85MJx"}>
+              <BiLogoDiscordAlt className={styles.socialIcon} />
+            </Link>
+            <Link href={"https://ouija-amm.medium.com/"}>
+              <SiMedium className={styles.socialIcon} />
+            </Link>
+            <Link href={"https://ouija-exchange.gitbook.io/docs/"}>
+              <AiFillGithub className={styles.socialIcon} />
+            </Link>
           </div>
 
           <div className={styles.goal}>
@@ -46,7 +54,11 @@ export default function Home() {
               bringing the deepest liquidity at oracle pricing. Swap and earn at
               a superior market rate in the omnichain future.
             </p>
-            <Link href={"https://ouija.exchange/"}>
+            <Link
+              href={
+                "https://4260984518-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F51zxOfoeLULOlOJkeN4f%2Fuploads%2Ft2em3XweZ8Q0rjkgAYMJ%2Fouija-amm-whitepaper.pdf?alt=media&token=4dd45e84-b559-4511-91cb-b7f96ca9d6b4"
+              }
+            >
               <WhitePaperButton />
             </Link>
           </div>
@@ -241,9 +253,15 @@ export default function Home() {
                 height={1000}
               />
               <div className={styles.aboutSocials}>
-                <AiOutlineTwitter className={styles.socialIcon} />
-                <BiLogoDiscordAlt className={styles.socialIcon} />
-                <SiMedium className={styles.socialIcon} />
+                <Link href={"https://twitter.com/ouija_exchange"}>
+                  <AiOutlineTwitter className={styles.socialIcon} />
+                </Link>
+                <Link href={"https://discord.gg/jRtGF85MJx"}>
+                  <BiLogoDiscordAlt className={styles.socialIcon} />
+                </Link>
+                <Link href={"https://ouija-amm.medium.com/"}>
+                  <SiMedium className={styles.socialIcon} />
+                </Link>
               </div>
             </div>
 
