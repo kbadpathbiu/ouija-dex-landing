@@ -1,0 +1,131 @@
+
+
+.bg {
+  @apply w-full -z-10 absolute;
+}
+
+.logoAndButton {
+  @apply flex justify-between
+}
+
+
+.logo {
+  @apply w-20
+}
+
+
+.socialsAndGoal {
+  @apply flex justify-between mt-40
+}
+
+.socials {
+  @apply flex flex-col space-y-4
+}
+
+.socialIcon {
+  @apply text-white text-3xl
+}
+
+.goal {
+  @apply flex flex-col w-1/4 mr-60
+}
+
+.goalText {
+  @apply text-white leading-10
+}
+.productsAndUnderscore {
+  @apply flex flex-col items-center w-32 mx-auto
+}
+
+.products {
+  @apply mx-auto text-white text-3xl text-center mt-96 mb-2
+}
+
+
+.aboutContainer {
+  @apply flex justify-evenly
+}
+
+.aboutItem {
+  @apply mt-20 w-80
+}
+
+.aboutText {
+  @apply  h-60 text-white w-64 leading-10 px-10 mt-8
+}
+
+.parnersAndUnderscore {
+  @apply flex flex-col items-center w-32 mx-auto
+}
+
+.parners  {
+  @apply mx-auto text-white text-3xl text-center mt-96 mb-2
+}
+
+.partners {
+  @apply flex justify-evenly flex-wrap
+}
+
+.partner {
+  @apply w-44 h-44 my-20 mx-28
+}
+
+.insightsAndUnderscore {
+  @apply flex flex-col items-center w-32 mx-auto mb-20
+}
+
+.insights {
+  @apply mx-auto text-white text-3xl text-center mt-96 mb-2
+}
+
+
+
+.insightsContainer {
+  @apply flex justify-evenly
+}
+
+.insightCard {
+  @apply flex flex-col
+}
+
+.insightImage {
+  @apply w-80 h-full mx-auto rounded-t-3xl
+}
+
+.insightText {
+  @apply text-black bg-white p-8 rounded-b-3xl w-80
+}
+
+.buttonCenter {
+@apply text-center
+}
+.meduimButton {
+  @apply py-1 px-6 text-button-text rounded-full border border-white mt-20 mb-96
+}
+
+
+
+
+.footer {
+  @apply flex w-1/2 justify-between
+}
+.footerLogo {
+  @apply w-20 mt-2
+}
+
+.aboutSocials {
+  @apply flex space-x-2 mt-10 mr-20
+}
+
+.aboutHeader {
+  @apply text-white text-2xl mb-8
+}
+
+
+.footerText {
+  @apply text-white my-4
+}
+
+.rights {
+  @apply text-gray-300 text-center mt-20
+}
