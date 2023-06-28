@@ -27,7 +27,7 @@
 }
 
 .goal {
-  @apply flex flex-col w-1/4 mr-60
+  @apply flex flex-col w-1/4 mx-auto mb-96
 }
 
 .goalText {
@@ -75,7 +75,7 @@
 }
 
 .insights {
-  @apply mx-auto text-white text-3xl text-center mt-96 mb-2
+  @apply mx-auto text-white text-3xl text-center mt-60 mb-2
 }
 
 
@@ -100,7 +100,7 @@
 @apply text-center
 }
 .meduimButton {
-  @apply py-1 px-6 text-button-text rounded-full border border-white mt-20 mb-96
+  @apply py-1 px-6 text-button-text rounded-full border border-white mt-20 mb-[1000px]
 }
 
 
