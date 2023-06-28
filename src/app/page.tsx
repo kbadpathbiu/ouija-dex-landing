@@ -11,18 +11,22 @@ import WhitePaperButton from "./components/buttons/WhitePaperButton";
 import Link from "next/link";
 
 export default function Home() {
+
+  const gradient =  "linear-gradient(305deg, rgba(100,150,162,1) 23%, rgba(52,82,97,1) 50%, rgba(34,67,87,1) 77%)"
   return (
     <main
       style={{
-        background:
-          "linear-gradient(305deg, rgba(100,150,162,1) 23%, rgba(52,82,97,1) 50%, rgba(34,67,87,1) 77%)",
+        backgroundImage: "url(/astralbg.svg)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+
       }}
     >
       <Container>
         <div className={styles.logoAndButton}>
           <Image
             className={styles.logo}
-            src={`/logo.svg`}
+            src={`/newLogo.svg`}
             alt="logo"
             width={1000}
             height={1000}
@@ -247,7 +251,7 @@ export default function Home() {
             <div className={styles.logoAndSocials}>
               <Image
                 className={styles.footerLogo}
-                src={`/logo.svg`}
+                src={`/newLogo.svg`}
                 alt="logo"
                 width={1000}
                 height={1000}
