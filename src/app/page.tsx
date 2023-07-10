@@ -9,6 +9,7 @@ import { SiMedium } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import WhitePaperButton from "./components/buttons/WhitePaperButton";
 import Link from "next/link";
+import { GOOGLE_FONT_PROVIDER } from "next/dist/shared/lib/constants";
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
             width={1000}
             height={1000}
           />
-          <Link href={"https://ouija.exchange/"}>
+          <Link href={"https://app.ouija.exchange/"}>
             <Button />
           </Link>
         </div>
@@ -119,7 +120,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.parnersAndUnderscore}>
+        {/* <div className={styles.parnersAndUnderscore}>
           <h1 className={styles.parners}>Partners</h1>
           <Image
             src={`underscore.svg`}
@@ -180,10 +181,10 @@ export default function Home() {
             height={1000}
             className={styles.partner}
           />
-        </div>
+        </div> */}
 
         <div className={styles.insightsAndUnderscore}>
-          <h1 className={styles.insights}>Insigns</h1>
+          <h1 className={styles.insights}>Insights</h1>
           <Image
             src={`underscore.svg`}
             alt={"underscore"}
@@ -202,9 +203,11 @@ export default function Home() {
               width={1000}
               height={1000}
             />
-            <p className={styles.insightText}>
-              Occaecat qui in cillum aute est esse tempor ad do aute do.
-            </p>
+            <Link href={"https://ouija-amm.medium.com/introducing-ouija-a-novel-amm-protocol-with-unparalleled-liquidity-depth-2cc1254c341c"}>
+              <p className={styles.insightText}>
+              Introducing Ouija: A Novel AMM Protocol with Unparalleled Liquidity Depth
+              </p>
+            </Link>
           </div>
 
           <div className={styles.insightCard}>
@@ -215,9 +218,11 @@ export default function Home() {
               width={1000}
               height={1000}
             />
-            <p className={styles.insightText}>
-              Occaecat qui in cillum aute est esse tempor ad do aute do.
-            </p>
+            <Link href={"https://ouija-amm.medium.com/ouija-amm-under-the-hood-and-design-philosophy-623c203a69b9"}>
+              <p className={styles.insightText}>
+                Under the hood and design philosophy
+              </p>
+            </Link>
           </div>
 
           <div className={styles.insightCard}>
@@ -228,22 +233,26 @@ export default function Home() {
               width={1000}
               height={1000}
             />
-            <p className={styles.insightText}>
-              Occaecat qui in cillum aute est esse tempor ad do aute do.
-            </p>
+            <Link href={"https://ouija-amm.medium.com/announcing-ouijas-incentivised-closed-alpha-testnet-program-c027ddbdbb94"}>
+              <p className={styles.insightText}>
+                Closed Alpha Testnet Program
+              </p>
+            </Link>
           </div>
         </div>
 
         <div className={styles.buttonCenter}>
-          <button
-            className={styles.meduimButton}
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(178,226,204,1) 15%, rgba(103,160,184,1) 75%)",
-            }}
-          >
-            Medium
-          </button>
+          <Link href={"https://ouija-amm.medium.com/"}>
+            <button
+              className={styles.meduimButton}
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(178,226,204,1) 15%, rgba(103,160,184,1) 75%)",
+              }}
+            >
+              Medium
+            </button>
+          </Link>
         </div>
 
         <div>
@@ -271,20 +280,12 @@ export default function Home() {
 
             <div className={styles.docs}>
               <h1 className={styles.aboutHeader}>DOCS</h1>
-
-              <p className={styles.footerText}>Whitepaper</p>
-              <p className={styles.footerText}>Github</p>
-              <p className={styles.footerText}>Gitbook</p>
-            </div>
-
-            <div className={styles.aboutFooter}>
-              <h1 className={styles.aboutHeader}>ABOUT</h1>
-
-              <p className={styles.footerText}>Our product</p>
-              <p className={styles.footerText}>Investors</p>
-              <p className={styles.footerText}>Partners</p>
-              <p className={styles.footerText}>Team</p>
-              <p className={styles.footerText}>Branding</p>
+              <Link href={"https://4260984518-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F51zxOfoeLULOlOJkeN4f%2Fuploads%2Ft2em3XweZ8Q0rjkgAYMJ%2Fouija-amm-whitepaper.pdf?alt=media&token=4dd45e84-b559-4511-91cb-b7f96ca9d6b4"}>
+                <p className={styles.footerText}>Whitepaper</p>
+              </Link>
+              <Link href={"https://ouija-exchange.gitbook.io/docs/"}>
+                <p className={styles.footerText}>GitBook</p>
+              </Link>
             </div>
           </div>
           <p className={styles.rights}>All Rights Reserved</p>
