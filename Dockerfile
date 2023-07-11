@@ -19,7 +19,7 @@ FROM node:lts-slim
 
 RUN npm install -g serve
 
-COPY --from=0 /code/.next ./out
+COPY --from=0 /code/out ./out
 COPY ./crt/ouija_exchange.crt .
 COPY ./crt/ouija_exchange.key .
 EXPOSE 443
